@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        body {
+            background: #E2E4F6;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            /* background: grey; */
+            height: 80px;
+        }
+
+        .nav-bar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .nav-bar a {
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav-bar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #logo {
+            float: left;
+            margin: 0;
+            background-color: #333;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        #about {
+            font-family: 'Calibri';
+            font-size: 20px;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #video {
+            justify-content: center;
+            margin-top: 50px;
+            display: flex;
+        }
+
+        #aviary {
+            margin-top: 60px;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .bird {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: calc(100% / 3);
+            margin: 10px;
+            border: 1px solid #000;
+            border-radius: 3px;
+        }
+
+        .bird>.level {
+            background-color: #ddd;
+            color: black;
+            padding: 15px 0;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        footer>ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        footer>ul>li {
+            padding: 0 100px;
+        }
+
+        footer>span {
+            margin-top: 5px;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.9em;
+            color: #444;
+        }
+    </style>
+    <title>Adopt a bird</title>
+    <link rel="shortcut icon" type="image/jpg" href="images\226466.png" />
+</head>
+<main>
+    <header class="header">
+        <p id="logo">Adopt a bird</p>
+        <nav class="nav-bar">
+            <a href="#about" target="_top">About</a>>
+            <a href="#video" target="_top">Video</a>
+            <a href="#aviary" target="_top">Aviary</a>
+        </nav>
+    </header>
+
+    <body>
+        <!-- staviti ikone s lijeve strane i poravnati tekst s lijeve strane -->
+        <h1 style="text-align: center; font-size: 30px;">Friendly birds to adopt</h1>
+        <form id="form" style="text-align: center;">
+            <label></label>
+            <input type="email" name="email" id="email" placeholder="Enter your email addres" />
+            <input type="submit" name="submit" id="submit" />
+        </form>
+        <section id="about">
+            <div class="info"><img src="#" alt="">
+                <h3>Feathers</h3>
+                <p>Feathers are the defining characteristic of Aves, found on every living species of bird and no other
+                    class of animal.</p>
+            </div>
+            <div class="info"><img src="#" alt="">
+                <h3>Wings</h3>
+                <p>All birds have wings, although not all birds fly. Nor are wings confined to Aves; bats are flying
+                    mammals and most insects have wings. </p>
+            </div>
+            <div class="info"><img src="#" alt="">
+                <h3>Beak</h3>
+                <p>All birds have beaks, or bills, made of a bony core surrounded by a thin layer of keratin.</p>
+            </div>
+        </section>
+        <br>
+        <section id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9jQdIuKhfZw"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+        <section id="aviary">
+            <div class="bird" id="great tit">
+                <div class="level">Great tit</div>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+                <button class="btn">Adopt</button>
+            </div>
+            <div class="bird" id="Robin">
+                <div class="level">Robin</div>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+                <button class="btn">Adopt</button>
+            </div>
+            <div class="bird" id="Nutthatch">
+                <div class="level">Nutthatch</div>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+                <button class="btn">Adopt</button>
+            </div>
+            <div class="bird" id="Chaffinch">
+                <div class="level">Chaffinch</div>
+                <ul>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                    <li>Lorem ipsum</li>
+                </ul>
+                <button class="btn">Adopt</button>
+            </div>
+        </section>
+        <footer>
+            <ul>
+                <li>
+                    <a href="#">Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Terms</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <span>Copyright 2022, Adopt a bird</span>
+        </footer>
+    </body>
+</main>
+
+</html>
